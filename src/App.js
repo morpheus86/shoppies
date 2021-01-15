@@ -41,7 +41,7 @@ function App() {
       let movies;
       if (searchMovieTitle.length > 0) {
         const response = await fetch(
-          `http://www.omdbapi.com/?t=${searchMovieTitle}&apikey=9352fafd`
+          `https://www.omdbapi.com/?t=${searchMovieTitle}&apikey=9352fafd`
         );
         movies = await response.json();
         let updatedMovie = addMovieButtonController(movies);
