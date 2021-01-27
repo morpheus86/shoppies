@@ -34,7 +34,6 @@ function App() {
     setNominate((currentNomination) => {
       return currentNomination.filter((el) => el.Title !== nomination.Title);
     });
-    alert("are you certain you want to remove your nomination?");
   };
   useEffect(() => {
     const onType = async () => {
